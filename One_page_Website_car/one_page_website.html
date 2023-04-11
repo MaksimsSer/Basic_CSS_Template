@@ -33,110 +33,124 @@
 	
 	<!-- Galery -->
 	
-	<section>
-		<div id="Gallery">
-			<h1>Gallery</h1>
-			<div>
-			
-			<!-- Photo container 1 -->
-				<div>
-					<div>
-					<img src=".\Images\Cars\car_1.png" alt="">
-						<div>
-							<h3> Click to Enlarge </h3>
-							<p>  The most advanced future is coming,don't hesitate,check it now! </p>
-						</div>
-					</div>
-				</div>
-			<!-- End photo container 1 -->
+	<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="./Images/Cars/car_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Images/Cars/car_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Images/Cars/car_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Images/Cars/car_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Images/Cars/car_5.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Images/Cars/car_6.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Images/Cars/car_7.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./Images/Cars/car_8.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>  
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="./Images/Cars/car_1.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="./Images/Cars/car_2.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="./Images/Cars/car_3.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="Images/Cars/car_4.png" style="width:100%">
+	  </div>
+	  
+	  <div class="mySlides">
+		<div class="numbertext">5 / 5</div>
+		<img src="./Images/Cars/car_5.png" style="width:100%">
+	  </div>
 
-			<!-- Photo container 2 -->
-				<div>
-					<div>
-					<img src=".\Images\Cars\car_2.png" alt="">
-						<div>
-							<h3> Click to Enlarge </h3>
-							<p>  The most advanced future is coming,don't hesitate,check it now! </p>
-						</div>
-					</div>
-				</div>
-			<!-- End photo container 2 -->	
-			
-			<!-- Photo container 3 -->
-				<div>
-					<div>
-					<img src=".\Images\Cars\car_3.png" alt="">
-						<div>
-							<h3> Click to Enlarge </h3>
-							<p>  The most advanced future is coming,don't hesitate,check it now! </p>
-						</div>
-					</div>
-				</div>
-			<!-- End photo container 3	-->
-			
-			<!-- Photo container 4 -->
-				<div>
-					<div>
-					<img src=".\Images\Cars\car_4.png" alt="">
-						<div>
-							<h3> Click to Enlarge </h3>
-							<p>  The most advanced future is coming,don't hesitate,check it now! </p>
-						</div>
-					</div>
-				</div>
-			<!-- End photo container 4 -->
-			
-			<!-- Photo container 5 -->
-				<div>
-					<div>
-					<img src=".\Images\Cars\car_5.png" alt="">
-						<div>
-							<h3> Click to Enlarge </h3>
-							<p>  The most advanced future is coming,don't hesitate,check it now! </p>
-						</div>
-					</div>
-				</div>
-			<!-- End photo container 5 -->
-			
-			<!-- Photo container 6 -->
-				<div>
-					<div>
-					<img src=".\Images\Cars\car_6.png" alt="">
-						<div>
-							<h3> Click to Enlarge </h3>
-							<p>  The most advanced future is coming,don't hesitate,check it now! </p>
-						</div>
-					</div>
-				</div>
-			<!-- End photo container 6 -->
-			
-			<!-- Photo container 7 -->
-				<div>
-					<div>
-					<img src=".\Images\Cars\car_7.png" alt="">
-						<div>
-							<h3> Click to Enlarge </h3>
-							<p>  The most advanced future is coming,don't hesitate,check it now! </p>
-						</div>
-					</div>
-				</div>
-			<!-- End photo container 7 -->
-			
-			<!-- Photo container 8 -->
-				<div>
-					<div>
-					<img src=".\Images\Cars\car_8.png" alt="">
-						<div>
-							<h3> Click to Enlarge </h3>
-							<p>  The most advanced future is coming,don't hesitate,check it now! </p>
-						</div>
-					</div>
-				</div>
-			<!-- End photo container 8 -->
-			
-			</div>
-		</div>	
-	</section>
+	  <div class="mySlides">
+		<div class="numbertext">6 / 6</div>
+		<img src="Images/Cars/car_6.png" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">7 / 7</div>
+		<img src="Images/Cars/car_7.png" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">8 / 8</div>
+		<img src="Images/Cars/car_8.png" style="width:100%">
+	  </div>
+
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="./Images/Cars/car_1.png" onclick="currentSlide(1)" alt="Transformer">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./Images/Cars/car_2.png" onclick="currentSlide(2)" alt="Gold Dragon">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./Images/Cars/car_3.png" onclick="currentSlide(3)" alt="Technologies">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./Images/Cars/car_4.png" onclick="currentSlide(4)" alt="Blue Devil">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./Images/Cars/car_5.png" onclick="currentSlide(4)" alt="Bright Future">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./Images/Cars/car_6.png" onclick="currentSlide(4)" alt="EQ">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./Images/Cars/car_7.png" onclick="currentSlide(4)" alt="Phantom">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./Images/Cars/car_8.png" onclick="currentSlide(4)" alt="Lights">
+	  </div>
+	</div>
+  </div>
+		
 	<!-- End Galery -->
 	
 	<!-- Video -->
@@ -180,6 +194,6 @@
 	<!-- FOOTER -->
 	<div> www.futurecars.advancedexpirience &nbsp;| &nbsp; &copy;2022 </div>
 	<!-- End footer -->
-	
-	</body>
+	<script src="JS/one_page_website.js"></script>
+	</body>\howto\howto_js_slideshow_gallery.asp
 </html>	
